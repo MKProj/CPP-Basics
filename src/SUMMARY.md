@@ -1,3 +1,10 @@
 # Summary
-
-- [Chapter 1](./chapter_1.md)
+- [Getting Started](00.md)
+- [Introduction](01-intro.md)
+- [Variables](02-var.md)
+- [Conditionals & Logic](03-cond.md)
+- [Loops](04-loop.md)
+- [Vectors](05-vec.md)
+- [Functions](06-func.md)
+- [Classes & Objects](07-class.md)
+- [References & Pointers](08-ref.md)
