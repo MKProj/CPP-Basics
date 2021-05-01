@@ -171,6 +171,55 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<h2 id="program-structure"><a class="header" href="#program-structure">Program Structure</a></h2>
+<p>Consider the following hello world program, <code>hello.cpp</code>: </p>
+<pre><code class="language-c++">#include&lt;iostream&gt; 
+
+int main(){
+    std::cout &lt;&lt; &quot;Hello World&quot; &lt;&lt; std::endl; 
+    return 0;
+}
+
+</code></pre>
+<p>The program runs from top to bottom, line by line:</p>
+<ul>
+<li>The first line instructs the compiler to locate the file that contains a library called <code>iostream</code>. 
+<ul>
+<li>This library contains code that allows for I/O (input &amp; output).</li>
+</ul>
+</li>
+<li>The <code>main()</code> function houses all the instructions for the program.</li>
+</ul>
+<h2 id="basic-output"><a class="header" href="#basic-output">Basic Output</a></h2>
+<p>Now let's talk more about the <code>std::cout</code> in our program above. This is used to display output to the user's 
+command line or terminal. To use <code>std::cout</code>, you must use it following <code>&lt;&lt;</code> and a string or variable you wish 
+to output. </p>
+<p><code>std::cout &lt;&lt; &quot;The answer of the test is: &quot; &lt;&lt; answer &lt;&lt; std::endl;</code></p>
+<p><strong>Note:</strong> <code>std::endl</code> is used to end the line of the output. </p>
+<h2 id="comments"><a class="header" href="#comments">Comments</a></h2>
+<p>Comments are useful to document code, temporary debugging and in C++, it supports two different 
+type of comments, single line <code>//</code> and multi-line <code>/* */</code>. Comments are ignored by the compiler 
+at compiler time, making them a very good way to organize your code. </p>
+<pre><code class="language-c++">// This single line will be ignored
+
+/* 
+The first C++ program written by MKProjects 
+was only available for Linux on Sanp!
+All of this will be ignored !!!
+*/ 
+</code></pre>
+<h2 id="compile-and-run"><a class="header" href="#compile-and-run">Compile and Run</a></h2>
+<p>Since we have our program, <code>hello.cpp</code>, we may as well compile and run it. </p>
+<pre><code class="language-bash"># First compile the program with g++ 
+$ g++ hello.cpp
+
+# Now run the binary to execute the program 
+$ ls
+a.out hello.cpp
+
+$ ./a.out 
+Hello World
+</code></pre>
 
                     </main>
 

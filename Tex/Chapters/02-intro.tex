@@ -1,0 +1,61 @@
+\chapter{Introduction}
+\section{Program Structure}
+Consider the following hello world program, \verb!hello.cpp!: 
+
+\begin{verbatim}
+#include<iostream> 
+
+int main(){
+    std::cout << "Hello World" << std::endl; 
+    return 0;
+}
+\end{verbatim}
+
+\noindent The program runs from top to bottom, line by line:
+
+\begin{itemize}
+    \item The first line instructs the compiler to 
+    locate the file that contains a library called \verb!iostream!.
+    \item This library contains code that allows for I/O (input \& output).
+    \item The \verb!main()! function houses all the instructions for the program.
+\end{itemize}
+
+\section{Basic Output}
+Now let's talk more about the \verb!std::cout! in our program above. 
+This is used to display output to the user's command line or terminal.
+To use \verb!std::cout!, you must use it following \verb!<<! and a string
+or variable you wish to output. 
+\\
+\verb!std::cout << "The answer of the test is: " << answer << std::endl;!
+\\
+\textbf{Note:} \verb!std::endl! is used to end the line of the output. 
+\newpage
+\section{Comments}
+Comments are useful to document code, temporary debugging and in C++, it supports two different 
+type of comments, single line \verb!//! and multi-line \verb!/* */!. 
+Comments are ignored by the compiler at compiler time, making them a very good way to organize your code. 
+
+\begin{verbatim}
+// This single line will be ignored
+
+/* 
+The first C++ program written by MKProjects 
+was only available for Linux on Sanp!
+All of this will be ignored !!!
+*/ 
+\end{verbatim}
+
+\paragraph{Compile \& Run}
+Since we have our program, \verb!hello.cpp!, we may as well compile and run it. 
+
+\begin{verbatim}
+# First compile the program with g++ 
+$ g++ hello.cpp
+
+# Now run the binary to execute the program 
+$ ls
+a.out hello.cpp
+
+$ ./a.out 
+Hello World
+\end{verbatim}
