@@ -1,0 +1,73 @@
+\chapter{Variables}
+\par A variable refers to a storage location in the computer’s memory that one can set aside to save, retrieve, and manipulate data.
+
+\par To initialize a variable in C++, you must first declare it's data type (will be discussed next), a name for the variable 
+and assigned a value with the assignment operator " \verb!=!"
+
+\noindent Example:  \verb!int var = 10 // data_type name = value; \verb!
+
+\par Variables can also be declared uninitialized, this means it doesn't have a value yet, and this is done by not adding an 
+assignment value.
+
+\section{Data Types}
+\par In C++, there are 4 primitive data types, these are: 
+
+\begin{enumerate}
+    \item integers ( \verb!int!)
+    \item double floating point ( \verb!double!)
+    \item characters ( \verb!char!)
+    \item boolean ( \verb!bool!)
+\end{enumerate}
+As well as a common data type used along the primitive type is strings( \verb!std::string!). 
+
+\subsection{Integers}
+\par The integer data type is a non-decimal number that can be positive or negative. An integer variable 
+is declared with the \verb!int! keyword, and keep in mind it can not be manipulated along the double data type. 
+An integer typically requires 4 bytes of memory space and ranges from $-2^{31}$ to $2^{31}$.  
+
+\noindent Example: \verb!int foo = 89!
+
+\subsection{Doubles}
+\par The double data type is a decimal point number requiring 8 bytes of memory, and is declared using 
+the  \verb!double! keyword.  
+
+\noindent Example: \verb!double foo = 0.78!
+
+\subsection{Characters}
+\par The character data type is a single character that is wrapped within single quotes \verb!' '!. They typically 
+require 1 byte of memory, and is declared by the \verb!char! keyword. 
+
+\noindent Example: \verb!char letter = 'A'!
+
+\subsection{Strings}
+\par Strings are an array of characters and are wrapped within double quotes \verb!" "!. To declare a string 
+you will need to use \verb!std::string!.
+
+\noindent Example: \verb!std::string word = "hello";!
+
+\subsection{Boolean}
+\par A boolean data type is a value that is either \verb!true! or \verb!false!, and is declared using the \verb!bool! keyword 
+
+\noindent Example: \verb!bool condition = true!
+
+\section{Arithmetic Operators}
+\par C++ supports different types of arithmetic operators that can perform common mathematical operations:
+
+\begin{itemize}
+    \item \verb!+! addition
+    \item \verb!-! subtraction
+    \item \verb!*! multiplication
+    \item \verb!/! division
+    \item \verb!%! modulo (yields the remainder)
+\end{itemize}
+
+\section{User Input}
+\verb!std::cin! which stands for “character input”, reads user input from the keyboard. Here, the user can enter 
+a number, press \verb!enter!, and that number will get stored in \verb!tip!.
+\begin{verbatim}
+int tip = 0;
+ 
+std::cout << "Enter amount: ";
+std::cin >> tip;
+\end{verbatim}
+

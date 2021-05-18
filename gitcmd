@@ -1,5 +1,5 @@
 #!/bin/bash
-
+mdbook build
 git add -A 
 git commit -m "updated content"
 git push -u origin main
